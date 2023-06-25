@@ -39,48 +39,48 @@ function NavBar(){
       {/* overlay for behind when menu is toggled */}
       <div className={toggleMenu ? "fixed left-0 top-0 w-full h-screen bg-black/40": ''}>
         <div className={
-          toggleMenu ? "fixed left-0 top-0 w-[75%] h-screen bg-[#ECF4FA] ease-in duration-300 p-10": "fixed left-[-100%] top-0 ease-in-duration 300 p-10"
+          toggleMenu ? "fixed left-0 top-0 w-[75%] h-screen bg-[#20203d] ease-in-out duration-300 p-10": "fixed left-[-100%] top-0 ease-in-out duration 500 p-10"
         }>
           {/* top section of menu bar */}
           <div className="flex w-full items-center justify-between">
-            <Image src="/../public/assets/tm-logo-2.png" alt="/" width='80' height='50'/>
-            <div onClick={handleMenu} className="rounded-full shadow-lg shadow-gray-400 p-2 hover:bg-slate-600/50">
+            <Image src="/assets/tm-logo-light-white.png" alt="/" width='80' height='50'/>
+            <div onClick={handleMenu} className="rounded-full shadow-lg shadow-black p-2 bg-slate-600 hover:bg-white/50 cursor-pointer">
               <AiOutlineClose/>
             </div>
           </div>
-          <div className="border-b border-gray-300 my-10">
+          <div className=" border-gray-300 my-10 hover:font-bold">
             <p className="w-[85%] md:w-[90%]">Let's create something together</p>
           </div>
           {/* Menu list */}
           <div className="py-4 px-4 flex flex-col">
             <ul className="uppercase text-sm">
               <Link href='/'>
-                <li className="py-4 hover:font-bold hover:border-b">Home</li>
+                <li className="py-4 hover:font-bold">Home</li>
               </Link>
               <Link href='/'>
-                <li className="py-4 hover:font-bold hover:border-b">About</li>
+                <li className="py-4 hover:font-bold">About</li>
               </Link>
               <Link href='/'>
-                <li className="py-4 hover:font-bold hover:border-b">Skills</li>
+                <li className="py-4 hover:font-bold">Skills</li>
               </Link>
               <Link href='/'>
-                <li className="py-4 hover:font-bold hover:border-b">Projects</li>
+                <li className="py-4 hover:font-bold">Projects</li>
               </Link>
               <Link href='/'>
-                <li className="py-4 hover:font-bold hover:border-b">Contact</li>
+                <li className="py-4 hover:font-bold">Contact</li>
               </Link>
             </ul>
             {/* Connect menu */}
             <div className="pt-[60px]">
               <p className="my-8 uppercase tracking-widest text-sm">Let's connect:</p>
               <div className="flex justify-between items-center w-full sm-w-[80%] px-[20%]">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-2 hover:bg-slate-600/50">
+                <div className="rounded-full shadow-lg shadow-black p-3 bg-slate-600 hover:bg-white/50 cursor-pointer" >
                   <AiFillLinkedin/>
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-2 hover:bg-slate-600/50">
+                <div className="rounded-full shadow-lg shadow-black p-3 bg-slate-600 hover:bg-white/50 cursor-pointer">
                   <AiFillGithub/>
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-2 hover:bg-slate-600/50">
+                <div className="rounded-full shadow-lg shadow-black p-3 bg-slate-600 hover:bg-white/50 cursor-pointer">
                   <AiOutlineMail/>
                 </div>
                 
