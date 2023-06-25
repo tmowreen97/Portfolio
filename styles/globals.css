@@ -5,7 +5,7 @@
 
 @layer base{
   body{
-    @apply bg-[#F9FBFD] text-[#1f2937] tracking-wide 
+    @apply bg-[#F9FBFD] text-[#F9FBFD] tracking-wide 
   }
   h1, h2, h3, h4, h5, h6{
     @apply font-bold

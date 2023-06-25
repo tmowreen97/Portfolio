@@ -10,9 +10,9 @@ function NavBar(){
     setToggleMenu(!toggleMenu)
   }
   return(
-    <div className='fixed w-full h-20 shadow-xl z-[100] '>
-      <div className="flex justify-between items-center w-full h-full px-10 2xl:px-16">
-        <Image src={"/../public/assets/tm-logo-2.png"} alt="/" width='100' height='45'/>
+    <div className='fixed w-full h-20 z-[100] '>
+      <div className="flex justify-between items-center w-full h-full px-10 2xl:px-16 opacity-95">
+        <Image src={"/assets/tm-logo-light-white.png"} alt="/" width='100' height='45'/>
       <div>
         <ul className="hidden md:flex">
         <Link href='/'>
