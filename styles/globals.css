@@ -2,16 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base{
   body{
-    @apply bg-[#b9dbf5] text-[#1f2937] tracking-wide font-sans
+    @apply bg-[#F9FBFD] text-[#1f2937] tracking-wide 
   }
   h1, h2, h3, h4, h5, h6{
     @apply font-bold
   }
 
   h1{
-    @apply text-4xl sm:text-5xl md:text-6xl
+    @apply text-8xl sm:text-5xl md:text-6xl
   }
 
   h2{

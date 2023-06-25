@@ -10,25 +10,25 @@ function NavBar(){
     setToggleMenu(!toggleMenu)
   }
   return(
-    <div className='fixed w-full h-20 shadow-xl z-[100]'>
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image src="/../public/assets/TMlogo.png" alt="/" width='125' height='50'/>
+    <div className='fixed w-full h-20 shadow-xl z-[100] '>
+      <div className="flex justify-between items-center w-full h-full px-10 2xl:px-16">
+        <Image src="/../public/assets/tm-logo-2.png" alt="/" width='100' height='45'/>
       <div>
         <ul className="hidden md:flex">
         <Link href='/'>
-          <li className="ml-10 text-sm uppercase hover:text-[#ECF4FA]">Home</li>
+          <li className="ml-10 text-sm uppercase hover:font-bold">Home</li>
         </Link>
         <Link href='/'>
-          <li className="ml-10 text-sm uppercase hover:text-[#ECF4FA]">About</li>
+          <li className="ml-10 text-sm uppercase hover:font-bold">About</li>
         </Link>
         <Link href='/'>
-          <li className="ml-10 text-sm uppercase hover:text-[#ECF4FA]">Skills</li>
+          <li className="ml-10 text-sm uppercase hover:font-bold">Skills</li>
         </Link>
         <Link href='/'>
-          <li className="ml-10 text-sm uppercase hover:text-[#ECF4FA]">Projects</li>
+          <li className="ml-10 text-sm uppercase hover:font-bold">Projects</li>
         </Link>
         <Link href='/'>
-          <li className="ml-10 text-sm uppercase hover:text-[#ECF4FA]">Contact</li>
+          <li className="ml-10 text-sm uppercase hover:font-bold">Contact</li>
         </Link>
         </ul>
         <div onClick={handleMenu} className="md:hidden">
@@ -39,11 +39,11 @@ function NavBar(){
       {/* overlay for behind when menu is toggled */}
       <div className={toggleMenu ? "fixed left-0 top-0 w-full h-screen bg-black/40": ''}>
         <div className={
-          toggleMenu ? "fixed left-0 top-0 w-[50%] h-screen bg-[#ECF4FA] ease-in duration-300 p-10": "fixed left-[-100%] top-0 ease-in-duration 300 p-10"
+          toggleMenu ? "fixed left-0 top-0 w-[75%] h-screen bg-[#ECF4FA] ease-in duration-300 p-10": "fixed left-[-100%] top-0 ease-in-duration 300 p-10"
         }>
           {/* top section of menu bar */}
           <div className="flex w-full items-center justify-between">
-            <Image src="/../public/assets/TMlogo.png" alt="/" width='80' height='50'/>
+            <Image src="/../public/assets/tm-logo-2.png" alt="/" width='80' height='50'/>
             <div onClick={handleMenu} className="rounded-full shadow-lg shadow-gray-400 p-2 hover:bg-slate-600/50">
               <AiOutlineClose/>
             </div>
