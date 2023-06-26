@@ -39,7 +39,7 @@ function NavBar(){
       {/* overlay for behind when menu is toggled */}
       <div className={toggleMenu ? "fixed left-0 top-0 w-full h-screen bg-black/40": ''}>
         <div className={
-          toggleMenu ? "fixed left-0 top-0 w-[75%] h-screen bg-[#20203d] ease-in-out duration-300 p-10": "fixed left-[-100%] top-0 ease-in-out duration 500 p-10"
+          toggleMenu ? "fixed left-0 top-0 w-[75%] h-screen bg-[#20203d] ease-in duration-500 p-10": "fixed left-[-100%] top-0 h-screen ease-in duration-500 p-10"
         }>
           {/* top section of menu bar */}
           <div className="flex w-full items-center justify-between">
