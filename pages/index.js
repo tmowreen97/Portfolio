@@ -10,12 +10,12 @@ export default function Home() {
         <title>TM Portfolio</title>
         <link className='width-5 height-5'rel="icon" href="/assets/tm-logo-icon.png"  />
       </Head>
-      <Image
+      {/* <Image
       src={'/assets/giphy.gif'}
       fill={true}
       quality={100}
       className=' opacity-80 z-[99]'
-      />
+      /> */}
       <NavBar/>
       <MainHome/>
 
