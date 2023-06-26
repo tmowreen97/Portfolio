@@ -1,5 +1,6 @@
+import Image from 'next/image';
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
-import {BsMedium} from 'react-icons/bs';
+import {BsMedium, BsPersonLinesFill} from 'react-icons/bs';
 import {GrDocumentUser} from 'react-icons/gr'
 
 
@@ -30,7 +31,7 @@ function About(){
             <BsMedium/>
           </div>
           <div className="text-xl rounded-full shadow-xl text-[#696969] bg-white/70 shadow-gray-600/90 p-8 mx-[12%] hover:bg-slate-600/50 hover:text-[#F9FBFD] hover:scale-[1.35] ease-in-out duration-200 cursor-pointer">
-            <GrDocumentUser/>
+            <BsPersonLinesFill/>
           </div>
         </div>
         </div>
