@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import {Urbanist} from "@next/font/google";
 import Image from 'next/image';
+import Home from '.';
 
 const urbanist = Urbanist({
   subsets:['latin'],
@@ -10,13 +11,7 @@ const urbanist = Urbanist({
 function MyApp({Component, pageProps}){
   return (
     <main className={urbanist.className}>
-      <Image
-      src={'/assets/giphy.gif'}
-      fill={true}
-      quality={100}
-      className=' opacity-80 z-[99]'
-      />
-     <Component {...pageProps}/> 
+     <Component {...pageProps}/>
     </main>
   )
   

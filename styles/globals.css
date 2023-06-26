@@ -5,10 +5,18 @@
 
 @layer base{
   body{
-    @apply bg-[#F9FBFD] text-[#F9FBFD] tracking-wide 
+    @apply bg-[#F9FBFD] text-[#F9FBFD] tracking-wide
   }
-  h1, h2, h3, h4, h5, h6{
-    @apply font-bold
+  h1, h2, h3, h4{
+    @apply font-extrabold
+  }
+
+  h5, h6{
+    @apply font-semibold
+  }
+
+  .custom-img{
+    background-image: url('/assets/giphy-3.gif');
   }
 /* 
   h1{

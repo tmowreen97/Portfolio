@@ -11,24 +11,24 @@ function NavBar(){
   }
   return(
     <div className='fixed w-full h-20 z-[100] '>
-      <div className="flex justify-between items-center w-full h-full px-10 2xl:px-16 opacity-95">
+      <div className="flex justify-between items-center w-full h-full px-10 2xl:px-16 ">
         <Image src={"/assets/tm-logo-light-white.png"} alt="/" width='100' height='45'/>
       <div>
         <ul className="hidden md:flex">
         <Link href='/'>
-          <li className="ml-10 text-sm uppercase hover:font-bold">Home</li>
+          <li className="ml-10 text-sm uppercase hover:font-extrabold">Home</li>
         </Link>
         <Link href='/'>
-          <li className="ml-10 text-sm uppercase hover:font-bold">About</li>
+          <li className="ml-10 text-sm uppercase hover:font-extrabold">About</li>
         </Link>
         <Link href='/'>
-          <li className="ml-10 text-sm uppercase hover:font-bold">Skills</li>
+          <li className="ml-10 text-sm uppercase hover:font-extrabold">Skills</li>
         </Link>
         <Link href='/'>
-          <li className="ml-10 text-sm uppercase hover:font-bold">Projects</li>
+          <li className="ml-10 text-sm uppercase hover:font-extrabold">Projects</li>
         </Link>
         <Link href='/'>
-          <li className="ml-10 text-sm uppercase hover:font-bold">Contact</li>
+          <li className="ml-10 text-sm uppercase hover:font-extrabold">Contact</li>
         </Link>
         </ul>
         <div onClick={handleMenu} className="md:hidden">
@@ -55,32 +55,32 @@ function NavBar(){
           <div className="py-4 px-4 flex flex-col">
             <ul className="uppercase text-sm">
               <Link href='/'>
-                <li className="py-4 hover:font-bold">Home</li>
+                <li className="py-4 hover:font-extrabold">Home</li>
               </Link>
               <Link href='/'>
-                <li className="py-4 hover:font-bold">About</li>
+                <li className="py-4 hover:font-extrabold">About</li>
               </Link>
               <Link href='/'>
-                <li className="py-4 hover:font-bold">Skills</li>
+                <li className="py-4 hover:font-extrabold">Skills</li>
               </Link>
               <Link href='/'>
-                <li className="py-4 hover:font-bold">Projects</li>
+                <li className="py-4 hover:font-extrabold">Projects</li>
               </Link>
               <Link href='/'>
-                <li className="py-4 hover:font-bold">Contact</li>
+                <li className="py-4 hover:font-extrabold">Contact</li>
               </Link>
             </ul>
             {/* Connect menu */}
             <div className="pt-[60px]">
               <p className="my-8 uppercase tracking-widest text-sm">Let's connect:</p>
-              <div className="flex justify-between items-center w-full sm-w-[80%] px-[20%]">
-                <div className="rounded-full shadow-lg shadow-black p-3 bg-slate-600 hover:bg-white/50 cursor-pointer" >
+              <div className="flex justify-between items-center w-full sm-w-[80%] px-[10%]">
+                <div className="rounded-full shadow-lg shadow-black p-3 bg-slate-600 hover:bg-white/50 cursor-pointer hover:scale-[1.35] ease-in-out duration-200" >
                   <AiFillLinkedin/>
                 </div>
-                <div className="rounded-full shadow-lg shadow-black p-3 bg-slate-600 hover:bg-white/50 cursor-pointer">
+                <div className="rounded-full shadow-lg shadow-black p-3 bg-slate-600 hover:bg-white/50 cursor-pointer hover:scale-[1.35] ease-in-out duration-200">
                   <AiFillGithub/>
                 </div>
-                <div className="rounded-full shadow-lg shadow-black p-3 bg-slate-600 hover:bg-white/50 cursor-pointer">
+                <div className="rounded-full shadow-lg shadow-black p-3 bg-slate-600 hover:bg-white/50 cursor-pointer hover:scale-[1.35] ease-in-out duration-200">
                   <AiOutlineMail/>
                 </div>
                 
