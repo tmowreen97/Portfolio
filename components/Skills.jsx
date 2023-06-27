@@ -12,16 +12,16 @@ function Skills (){
   return(
     <div className="w-screen h-screen text-center bg-cover bg-center custom-img bg-fixed">
       <div className=" max-w-[1240px] justify-center items-center mx-auto">
-        <div className="text-left flex-col items-center justify-center max-w-[100%] pt-[10%] z-[90] p-[6.5%]">
-          <div className='text-left pb-[5%]'>
+        <div className="text-left flex-col items-center justify-center max-w-[98%] pt-[25%] md:pt-[0%] z-[90] p-[6.5%]">
+          <div className='text-left pb-[8%]'>
             <h1 className="text-7xl">Skills</h1>
           </div>
           <div>
-            <div className=''>
-              <div className='grid grid-cols-2 md:grid-cols-4 rounded-full gap-[10%] justify-between items-center'>
+            <div >
+              <div className='grid grid-cols-2 md:grid-cols-4 rounded-full gap-[10%] justify-between items-center mb-[20px]'>
                 {skills_array.map((skill)=> {
                   return(
-                    <div className='items-center m-auto max-w-[200px] shadow-xl p-8 bg-white/60 hover:scale-125 ease-in duration-300'>
+                    <div key={skill} className='items-center m-auto max-w-[200px] shadow-xl p-8 bg-white/60 hover:scale-125 ease-in duration-300'>
                       <Image src={`${skill}`} width={64} height={64}/>
                       </div>
                     

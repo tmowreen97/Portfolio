@@ -20,7 +20,7 @@ function About(){
         <div className=" pl-5 max-w-[100%] z-[99] tracking-wider">
           <h5>Learn more about me:</h5>
         </div>
-        <div className="flex items-center text-center justify-center px-[45%] md:px-[30%] pt-[5%] z-[99]">
+        <div className="flex items-center text-center justify-center px-[45%] md:px-[30%] pt-[5%] z-[99] pb-[10%]">
           <div className=" text-xl rounded-full shadow-xl text-[#696969] bg-white/70 shadow-gray-600/90 p-8 mx-[12%] hover:bg-slate-600/50 hover:text-[#F9FBFD] hover:scale-[1.35] ease-in-out duration-200 cursor-pointer">
             <AiFillLinkedin/>
           </div>
@@ -37,8 +37,6 @@ function About(){
         </div>
         </div>
         </div>
-        
-      
     </div>
     
   )
