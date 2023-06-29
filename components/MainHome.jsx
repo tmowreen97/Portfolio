@@ -3,16 +3,16 @@ import {AiFillLinkedin, AiFillGithub, AiOutlineMail} from 'react-icons/ai';
 
 function MainHome(){
   return(
-    <div className="w-screen h-screen text-center ">
-      <div className="max-w-[1240px] w-full h-full flex justify-center items-center mx-auto">
-        <div className="flex items-center m-20">
-          <div className="text-left mx-15 items-center max-w-[70%] z-[90] tracking-wider">
+    <div className="w-full h-full text-center justify-center">
+      <div className="md:max-w-[1240px] w-full h-full flex mx-[10%] items-center justify-center text-center ">
+        <div className="flex items-center justify-center w-screen h-screen bg-cover bg-center custom-img bg-fixed md:pt-[0%] pt-[25%]">
+          <div className="md:pl-2 text-left items-center justify-center z-[90] max-w-[63%] tracking-wider">
             <h5>Hi, I'm</h5>
-            <h1 className="text-7xl">Tasreen Mowreen.</h1> <br/>
-            <div className=" pl-5 max-w-[78%] z-[99] tracking-wider">
+            <h1 className="text-5xl md:text-7xl">Tasreen Mowreen.</h1> <br/>
+            <div className="md:pl-5 max-w-[78%] z-[99] justify-center tracking-wider">
               <h6>A full-stack engineer.</h6>
               <h6>My goal is to continue showcasing my creativity, utilize my analytical skills and contribute to the future of technology by creating efficient and user friendly applications.</h6>
-              <div className="flex items-center justify-between p-5 z-[99]">
+              <div className="flex items-center justify-between max-w-[100%] md:mx-[0px] mx-[-10px] pt-[20px] md:pt-[0px] z-[99] ">
                 <div className="text-xl rounded-full shadow-xl text-[#696969] bg-white/70 shadow-gray-600/90 p-8 mx-5 mt-10 hover:bg-slate-600/50 hover:text-[#F9FBFD] hover:scale-[1.35] ease-in-out duration-200 cursor-pointer">
                   <AiFillLinkedin/>
                 </div>
@@ -25,9 +25,10 @@ function MainHome(){
               </div>
             </div>
           </div>
-          <div className="pt-10 md:flex z-[99] opacity-90">
-          <Image src={'/assets/me_coding.png'} width='350' height='350'alt='/'/>
+          <div className="pt-[5%] flex z-[99] opacity-90 pr-[10px] pb-[50px] md:pr-[15px] md:pb-[50px]">
+            <Image src={'/assets/me_coding.png'} width='325' height='325'alt='/'/>
           </div>
+
         </div>
       </div>
     </div>

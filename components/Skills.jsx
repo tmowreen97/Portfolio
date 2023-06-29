@@ -18,7 +18,7 @@ function Skills (){
           </div>
           <div>
             <div >
-              <div className='grid grid-cols-2 md:grid-cols-4 rounded-full gap-[10%] justify-between items-center mb-[20px]'>
+              <div className='grid grid-cols-2 md:grid-cols-4 rounded-full gap-[10%] justify-between items-center'>
                 {skills_array.map((skill)=> {
                   return(
                     <div key={skill} className='items-center m-auto max-w-[200px] shadow-xl p-8 bg-white/60 hover:scale-125 ease-in duration-300'>

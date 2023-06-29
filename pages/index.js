@@ -13,11 +13,14 @@ export default function Home() {
         <title>TM Portfolio</title>
         <link className='width-5 height-5'rel="icon" href="/assets/tm-logo-icon.png"  />
       </Head>
-      <NavBar/>
+      <div className='w-screen h-screen bg-cover bg-center custom-img bg-fixed '>
+       <NavBar/>
       <MainHome/>
       <About/>
       <Skills/>
-      <Projects/>
+      <Projects/> 
+      </div>
+      
     </div>
   )
 }
