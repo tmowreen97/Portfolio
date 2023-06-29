@@ -12,7 +12,7 @@ function Projects(){
   return(
     <div className="w-screen h-screen text-center bg-cover bg-center custom-img bg-fixed">
       <div className=" max-w-[1240px] justify-center items-center mx-auto">
-        <div className=" justify-between items-center p-[6.5%] max-w-[98%]">
+        <div className=" justify-between items-center p-[6.5%] pt-[600px] md:pt-[10%] max-w-[98%]">
         <div className="text-left pb-[10%]">
           <h1 className="text-7xl">Projects I've Created:</h1>
         </div>
