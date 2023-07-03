@@ -1,4 +1,5 @@
 import {React, useState} from "react";
+import ControlledCarousel from "./ControlledCarousel";
 
 function Projects(){
 
@@ -7,6 +8,8 @@ function Projects(){
   //   console.log(e.target.text)
   //   setProjectSelect(e.target.value)
   // }
+
+  const projectImages = ["/assets/self-full-categories.png", "/assets/critiquer.png", "/assets/movie-zone.png"]
   console.log(projectSelect)
 
   return(
@@ -27,6 +30,14 @@ function Projects(){
             <h5 onClick={()=> setProjectSelect('MovieZone')}>MovieZone</h5>
           </div>
           
+          </div>
+          <div>
+            {projectImages.map((img)=> {
+              return(
+                <ControlledCarousel img={img}/>
+              )
+            })}
+            
           </div>
         </div>
       </div>
