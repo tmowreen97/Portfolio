@@ -22,7 +22,7 @@ function Skills (){
                 {skills_array.map((skill)=> {
                   return(
                     <div key={skill} className='items-center mx-auto py-50px px-100px justify-center max-w-[200px] shadow-xl p-6 md:p-8 bg-white/60 hover:scale-125 ease-in duration-300 cursor-pointer'>
-                      <Image src={`${skill}`} width={64} height={64}/>
+                      <Image alt='/' src={`${skill}`} width={64} height={64}/>
                       </div>
                   )
                 })}

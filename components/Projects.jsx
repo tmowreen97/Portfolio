@@ -1,11 +1,25 @@
 import {React, useState} from "react";
-import ControlledCarousel from "./ControlledCarousel";
+import Link from "next/link";
 import {BsArrowRightCircle, BsArrowLeftCircle} from "react-icons/bs";
 
 function Projects(){
 
   const [projectSelect, setProjectSelect]= useState(0)
+  function handleRight(){
+    if(projectSelect<2){
+      setProjectSelect(projectSelect+1)
+    } else{
+      setProjectSelect(projectSelect-2)
+    }
+  }
 
+  function handleLeft(){
+    if(projectSelect>0){
+      setProjectSelect(projectSelect-1)
+    } else{
+      setProjectSelect(projectSelect+2)
+    }
+  }
   return(
     <div className="w-screen h-screen text-center bg-cover bg-center custom-img bg-fixed">
       <div className=" max-w-[1240px] justify-center items-center mx-auto bg-cover bg-center custom-img bg-fixed">
@@ -36,7 +50,7 @@ function Projects(){
           
           </div>
           <div className="w-full h-full text-center bg-cover bg-center custom-img bg-fixed justify-center items-center">
-            <Carousel projectSelect={projectSelect}/>
+            <Carousel projectSelect={projectSelect} handleLeft={handleLeft} handleRight={handleRight}/>
           </div>
         </div>
       </div>
@@ -47,40 +61,49 @@ function Projects(){
 export default Projects;
 
 
-function Carousel ({projectSelect}){
-  console.log(projectSelect)
+function Carousel ({projectSelect, handleRight, handleLeft}){
   const projectImages = [{
-    url: "/assets/self-full-categories.png",
-    title: "Self/Full"
+    url: "/assets/self-full-categories.png"
     //0
   }, 
   {
-    url: "/assets/critiquer.png",
-    title: "Critiquer"
+    url: "/assets/critiquer.png"
     //1
   }, 
   {
-    url: "/assets/movie-zone.png",
-    title: "MovieZone"
+    url: "/assets/movie-zone.png"
     //2
   }]
 
 
   return(
 
-    <div className="max-w-[800px] h-[600px]  m-auto py-16 px-4 relative group">
+    <div className="max-w-[800px] h-[600px]  m-auto py-16 px-4 relative group mb-[0%]">
       <div 
       style={{backgroundImage:`url(${projectImages[projectSelect].url})`}}
-      className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
+      className="w-full h-full rounded-2xl bg-center bg-cover duration-500 hover:scale-105 hover:opacity-90"
       >
       {/* Left Arrow */}
       <div className="hidden group-hover:block absolute top-[50%] translate-x-0 translate-y-[-40%] left-5 text-2xl p-2 text-[#696969] bg-white/70 shadow-gray-600/90 hover:bg-slate-600/50 hover:text-[#F9FBFD] rounded-full">
-        <BsArrowLeftCircle size={40}/>
+        <BsArrowLeftCircle onClick={()=> handleLeft()} size={40}/>
+      </div>
+      <div className="items-center text-center flex justify-center">
+        <div className="hidden group-hover:block  absolute md:top-[50%] top-[45%] translate-x-0 translate-y-[-40%] left-[40%] md:left-[35%] text-xl p-2 text-[#696969] bg-white/70 shadow-gray-600/90 hover:bg-slate-600/50 hover:text-[#F9FBFD] rounded-full">
+          <Link href="https://github.com/tmowreen97/Phase-5-Project" legacyBehavior>
+            <a target="_blank" rel="noopener noreferrer">GitHub</a>
+          </Link>
+        </div>
+        <div className="hidden group-hover:block absolute md:top-[50%] top-[55%] translate-x-0 translate-y-[-40%] md:right-[35%] right-[40%] text-xl p-2 text-[#696969] bg-white/70 shadow-gray-600/90 hover:bg-slate-600/50 hover:text-[#F9FBFD] rounded-full">
+        <Link href="https://github.com/tmowreen97/Phase-5-Project" legacyBehavior>
+            <a target="_blank" rel="noopener noreferrer">Demo</a>
+          </Link>
+        </div>
+        
       </div>
 
       {/* Right Arrow */}
       <div className="hidden group-hover:block absolute top-[50%] translate-x-0 translate-y-[-40%] right-5 text-2xl p-2 text-[#696969] bg-white/70 shadow-gray-600/90 hover:bg-slate-600/50 hover:text-[#F9FBFD] rounded-full">
-        <BsArrowRightCircle size={40}/>
+        <BsArrowRightCircle onClick={()=> handleRight()} size={40}/>
       </div>
 
       </div>
