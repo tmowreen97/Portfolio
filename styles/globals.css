@@ -20,14 +20,7 @@
     background-size: cover;
 
   }
-/* 
-  h1{
-    @apply text-8xl sm:text-5xl md:text-6xl
-  } */
-/* 
-  h2{
-    @apply text-3xl sm:text-4xl
-  } */
+  
   li{
     @apply cursor-pointer
   }
