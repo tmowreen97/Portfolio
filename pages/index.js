@@ -17,8 +17,7 @@ export default function Home() {
        <NavBar/>
       <MainHome/>
       <About/>
-      <Skills/>
-      <Projects/> 
+      {/* <Projects/>  */}
       {/* </div> */}
       
     </div>

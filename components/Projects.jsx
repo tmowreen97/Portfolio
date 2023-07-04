@@ -23,7 +23,7 @@ function Projects(){
   return(
     <div className="w-screen h-screen text-center bg-cover bg-center custom-img bg-fixed">
       <div className=" max-w-[1240px] justify-center items-center mx-auto bg-cover bg-center custom-img bg-fixed">
-        <div className=" justify-between items-center p-[6.5%] pt-[600px] md:pt-[10%] max-w-[98%]">
+        <div className=" justify-between items-center p-[6.5%] pt-[600px] md:pt-[10%] max-w-[98%] bg-cover bg-center custom-img bg-fixed '">
         <div className="text-left pb-[5%]">
           <h1 className="text-5xl md:text-7xl">Projects I've Created:</h1>
         </div>
@@ -78,7 +78,7 @@ function Carousel ({projectSelect, handleRight, handleLeft}){
 
   return(
 
-    <div className="max-w-[800px] h-[600px]  m-auto py-16 px-4 relative group mb-[0%]">
+    <div className="max-w-[800px] h-[600px]  m-auto py-16 px-4 relative group mb-[0%] bg-cover bg-center custom-img bg-fixed '">
       <div 
       style={{backgroundImage:`url(${projectImages[projectSelect].url})`}}
       className="w-full h-full rounded-2xl bg-center bg-cover duration-500 hover:scale-105 hover:opacity-90"

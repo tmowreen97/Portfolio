@@ -21,10 +21,10 @@ function NavBar(){
         <Link href='/'>
           <li className="ml-10 text-sm uppercase hover:font-extrabold">About</li>
         </Link>
-        <Link href='/'>
+        <Link href='/skills'>
           <li className="ml-10 text-sm uppercase hover:font-extrabold">Skills</li>
         </Link>
-        <Link href='/'>
+        <Link href='/projects'>
           <li className="ml-10 text-sm uppercase hover:font-extrabold">Projects</li>
         </Link>
         <Link href='/'>
@@ -60,10 +60,10 @@ function NavBar(){
               <Link href='/'>
                 <li className="py-4 hover:font-extrabold">About</li>
               </Link>
-              <Link href='/'>
+              <Link href='/skills'>
                 <li className="py-4 hover:font-extrabold">Skills</li>
               </Link>
-              <Link href='/'>
+              <Link href='/projects'>
                 <li className="py-4 hover:font-extrabold">Projects</li>
               </Link>
               <Link href='/'>
