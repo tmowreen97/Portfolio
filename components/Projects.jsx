@@ -25,7 +25,7 @@ function Projects(){
       <div className=" max-w-[1240px] justify-center items-center mx-auto bg-cover bg-center custom-img bg-fixed">
         <div className=" justify-between items-center p-[6.5%] pt-[600px] md:pt-[10%] max-w-[98%] bg-cover bg-center custom-img bg-fixed '">
         <div className="text-left pb-[5%]">
-          <h1 className="text-5xl md:text-7xl">Projects I've Created:</h1>
+          <h1 className="text-5xl md:text-7xl">Projects:</h1>
         </div>
         <div className="flex justify-between items-center mx-auto ">
           <div className=
@@ -63,15 +63,21 @@ export default Projects;
 
 function Carousel ({projectSelect, handleRight, handleLeft}){
   const projectImages = [{
-    url: "/assets/self-full-categories.png"
+    url: "/assets/self-full-categories.png",
+    github: "https://github.com/tmowreen97/Phase-5-Project",
+    demo: "https://youtu.be/r5Gfvc3t7EI"
     //0
   }, 
   {
-    url: "/assets/critiquer.png"
+    url: "/assets/critiquer.png",
+    github: "https://github.com/tmowreen97/Phase-4-Project",
+    demo: "https://youtu.be/A8pnMy8bvwE"
     //1
   }, 
   {
-    url: "/assets/movie-zone.png"
+    url: "/assets/movie-zone.png",
+    github: "https://github.com/tmowreen97/phase-3-frontend",
+    demo: "https://youtu.be/kcz9E44IfzY"
     //2
   }]
 
@@ -89,12 +95,12 @@ function Carousel ({projectSelect, handleRight, handleLeft}){
       </div>
       <div className="items-center text-center flex justify-center">
         <div className="hidden group-hover:block  absolute md:top-[50%] top-[45%] translate-x-0 translate-y-[-40%] left-[40%] md:left-[35%] text-xl p-2 text-[#696969] bg-white/70 shadow-gray-600/90 hover:bg-slate-600/50 hover:text-[#F9FBFD] rounded-full">
-          <Link href="https://github.com/tmowreen97/Phase-5-Project" legacyBehavior>
+          <Link href={`${projectImages[projectSelect].github}`}legacyBehavior>
             <a target="_blank" rel="noopener noreferrer">GitHub</a>
           </Link>
         </div>
         <div className="hidden group-hover:block absolute md:top-[50%] top-[55%] translate-x-0 translate-y-[-40%] md:right-[35%] right-[40%] text-xl p-2 text-[#696969] bg-white/70 shadow-gray-600/90 hover:bg-slate-600/50 hover:text-[#F9FBFD] rounded-full">
-        <Link href="https://github.com/tmowreen97/Phase-5-Project" legacyBehavior>
+        <Link  href={`${projectImages[projectSelect].demo}`} legacyBehavior>
             <a target="_blank" rel="noopener noreferrer">Demo</a>
           </Link>
         </div>
@@ -105,7 +111,6 @@ function Carousel ({projectSelect, handleRight, handleLeft}){
       <div className="hidden group-hover:block absolute top-[50%] translate-x-0 translate-y-[-40%] right-5 text-2xl p-2 text-[#696969] bg-white/70 shadow-gray-600/90 hover:bg-slate-600/50 hover:text-[#F9FBFD] rounded-full">
         <BsArrowRightCircle onClick={()=> handleRight()} size={40}/>
       </div>
-
       </div>
     </div>
   )
