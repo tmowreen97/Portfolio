@@ -39,30 +39,34 @@ function About(){
       img: '/assets/ruby-on-rails-logo.png',
       name: "Ruby on Rails"
     }, 
-    {
-      img: '/assets/sql-logo.png',
-      name: "SQL"
-    }, 
-    {
-      img: '/assets/postgresql-logo.png',
-      name: "PostgreSQL"
-    }, 
-    {
-      img: '/assets/sinatra-logo.png',
-      name: "Sinatra"
-    }]
+    // {
+    //   img: '/assets/sql-logo.png',
+    //   name: "SQL"
+    // }, 
+    // {
+    //   img: '/assets/postgresql-logo.png',
+    //   name: "PostgreSQL"
+    // }, 
+    // {
+    //   img: '/assets/sinatra-logo.png',
+    //   name: "Sinatra"
+    // }
+  ]
 
   return(
-    <div className="w-screen h-screen justify-center items-center text-center bg-cover bg-center custom-img bg-fixed ">
-      <div className="mx-auto w-screen h-screen flex justify-center items-center max-w-[67%] bg-cover bg-center custom-img bg-fixed">
-        <div className="items-center justify-center bg-cover bg-center custom-img bg-fixed">
-        <div className="text-left items-center justify-center pt-[8%] pb-[15%] z-[90] bg-cover bg-center custom-img bg-fixed">
+    <div className=' '>
+
+    
+    <div className="w-screen h-screen justify-center items-center text-center">
+      <div className=" flex justify-center items-center ">
+        <div className="w-screen h-screen items-center">
+        <div className="text-left items-center justify-center md:pt-[8%]  pb-[15%] z-[90] bg-cover bg-center custom-img bg-fixed">
           <div className='bg-cover bg-center custom-img bg-fixed'>
             <h1 className="text-5xl md:text-7xl">Who am I?</h1>
           </div>
         <div className=" pl-5 py-10 z-[99] tracking-wider bg-cover bg-center custom-img bg-fixed  items-center justify-between">
-          <p>I've been challenging myself to learn more and expand my skillset. My most recent challenge is learning to program, which I've done through FlatIron School and other online certifications.</p> <br/>
-          <p>Through earning my bachelor's degree in mathematics and graphic design I learned excellent creative problem solving skills. I've also gained strong customer experience, team-working and time management skills through my 5 years working in retail banking. I'm passionate in creating both visually appealing, and efficient user-friendly applications to further improve the user experience and company success. My goal is to continue to use my analytical and creative skills, develop my skillset and contribute to technology that improves our way of life. </p>
+          <p className=''>Through earning my bachelor's degree in mathematics and graphic design I learned excellent creative problem solving skills. I've also gained strong customer experience, team-working and time management skills through my 5 years working in retail banking. I'm passionate in creating both visually appealing, and efficient user-friendly applications to further improve the user experience and company success. My goal is to continue to use my analytical and creative skills, develop my skillset and contribute to technology that improves our way of life. </p> <br/>
+          <p className='font-style: italic'>My hobbies include gaming, watching scary movies, doing nails and spending time with my friends and family.</p>
         </div>
         <div className=" pl-5 z-[99] tracking-wider">
           <h5>My skills include:</h5>
@@ -103,7 +107,7 @@ function About(){
             
           </div>
           <div className="text-xl rounded-full shadow-xl text-[#696969] bg-white/70 shadow-gray-600/90 p-8 mx-[12%] hover:bg-slate-600/50 hover:text-[#F9FBFD] hover:scale-[1.35] ease-in-out duration-200 cursor-pointer">
-            <Link href="/assets/Tasreen Mowreen Resume PDF.pdf" legacyBehavior>
+            <Link href="/assets/Tasreen-Mowreen-ResumePDF.pdf" legacyBehavior>
             <a target='_blank' rel='noopener noreferrer'>
               <BsPersonLinesFill/>
             </a>
@@ -114,6 +118,7 @@ function About(){
         </div>
         </div>
         </div>
+    </div>
     </div>
     
   )

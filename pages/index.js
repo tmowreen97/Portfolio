@@ -8,15 +8,16 @@ import Projects from '../components/Projects';
 
 export default function Home() {
   return (
-    <div className='w-full h-full bg-cover bg-center custom-img bg-fixed '>
+    <div className='w-screen h-screen bg-cover bg-center custom-img bg-fixed bg-repeat'>
       <Head>
         <title>TM Portfolio</title>
         <link className='width-5 height-5'rel="icon" href="/assets/tm-logo-icon.png"  />
       </Head>
       {/* <div className='w-screen h-screen bg-cover bg-center custom-img bg-fixed '> */}
        <NavBar/>
-      <MainHome/>
-      <About/>
+        <MainHome/>
+         <About/>
+      
       {/* <Projects/>  */}
       {/* </div> */}
       

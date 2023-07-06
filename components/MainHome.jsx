@@ -32,7 +32,7 @@ function MainHome(){
               </div>
             </div>
           </div>
-          <div className="pt-[5%] flex z-[99] opacity-90 pr-[10px] pb-[50px] md:pr-[15px] pl-[100px]">
+          <div className="pt-[5%] flex z-[99] opacity-90 pr-[10px] pb-[50px] md:pr-[15px] md:pl-[100px]">
             <Image src={'/assets/me_coding.png'} width='325' height='325' alt='/'/>
           </div>
 

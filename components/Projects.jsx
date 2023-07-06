@@ -23,7 +23,7 @@ function Projects(){
   return(
     <div className="w-screen h-screen text-center bg-cover bg-center custom-img bg-fixed">
       <div className=" max-w-[1240px] justify-center items-center mx-auto bg-cover bg-center custom-img bg-fixed">
-        <div className=" justify-between items-center p-[6.5%] pt-[600px] md:pt-[10%] max-w-[98%] bg-cover bg-center custom-img bg-fixed '">
+        <div className=" justify-between items-center p-[6.5%] pt-[100px] md:pt-[10%] max-w-[98%] bg-cover bg-center custom-img bg-fixed '">
         <div className="text-left pb-[5%]">
           <h1 className="text-5xl md:text-7xl">Projects:</h1>
         </div>
