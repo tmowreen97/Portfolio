@@ -57,10 +57,10 @@ function About(){
     <div className=' '>
 
     
-    <div className="w-screen h-screen justify-center items-center text-center">
-      <div className=" flex justify-center items-center ">
-        <div className="w-screen h-screen items-center">
-        <div className="text-left items-center justify-center md:pt-[8%]  pb-[15%] z-[90] bg-cover bg-center custom-img bg-fixed">
+    <div className="w-full h-full justify-center items-center text-center bg-cover bg-center custom-img bg-fixed z-[90]">
+      <div className="md:max-w-[1240px] w-full h-full flex  text-center mx-[8%] justify-center items-center">
+        <div className="flex items-center justify-center w-screen h-screen bg-cover bg-center custom-img bg-fixed md:pt-[0%] ">
+        <div className="text-left items-center justify-center md:pt-[8%] max-w-[82%] pb-5">
           <div className='bg-cover bg-center custom-img bg-fixed'>
             <h1 className="text-5xl md:text-7xl">Who am I?</h1>
           </div>
@@ -107,7 +107,7 @@ function About(){
             
           </div>
           <div className="text-xl rounded-full shadow-xl text-[#696969] bg-white/70 shadow-gray-600/90 p-8 mx-[12%] hover:bg-slate-600/50 hover:text-[#F9FBFD] hover:scale-[1.35] ease-in-out duration-200 cursor-pointer">
-            <Link href="/assets/Tasreen-Mowreen-ResumePDF.pdf" legacyBehavior>
+            <Link href="/assets/Tasreen Mowreen Resume_pdf.pdf" legacyBehavior>
             <a target='_blank' rel='noopener noreferrer'>
               <BsPersonLinesFill/>
             </a>
