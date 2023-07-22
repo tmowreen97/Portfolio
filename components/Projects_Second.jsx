@@ -26,16 +26,16 @@ function Projects_Second(){
     //2
   }]
   return(
-    <div className="w-full h-full text-center justify-center bg-cover bg-center custom-img bg-fixed ">
-      <div className="md:max-w-[1240px] w-full h-full flex md:mx-[10%] items-center justify-center text-center">
-        <div className="items-center justify-center w-screen h-screen bg-cover bg-center custom-img bg-fixed md:pt-[10%] pt-[40%] max-w-[80%]">
+    <div className="w-full h-full text-center justify-center ">
+      <div className="md:max-w-[1240px] w-full h-full flex mx-[10%] items-center justify-center text-center  ">
+        <div className="w-screen h-screen md:pt-[10%] pt-[25%]">
           <div className="text-left">
             <h1 className="text-5xl md:text-7xl">Projects:</h1>
           </div>
-          <div className="grid grid-cols-1 text-center max-w-[1240px] pt-5 justify-center bg-cover bg-center custom-img bg-fixed">
+          <div className="grid grid-cols-1 text-center max-w-[1240px] pt-5 justify-center pb-[20%]">
             {projectImages.map((image)=> {
               return(
-                <div className=" p-2 ">
+                <div className=" p-2 " key={image.url}>
                   <div className="bg-white/30 md:flex items-center justify-center ">
                     <div className="pr-5 group">
                       <Image src={image.url} width='450' height='450'/>
@@ -55,7 +55,7 @@ function Projects_Second(){
                     <div className="text-left md:max-w-[40%] ">
                       {image.description.map((sentence)=>{
                         return(
-                          <p className="text-sm tracking-wider">{sentence}</p>
+                          <p className="text-sm tracking-wider" key={sentence}>{sentence}</p>
                         )
                       })}
                     </div>

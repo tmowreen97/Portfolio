@@ -19,6 +19,7 @@
     background-image: url('/assets/giphy-3.gif');
     background-size: cover;
     background-repeat: repeat;
+    background-attachment: scroll;
 
   }
 

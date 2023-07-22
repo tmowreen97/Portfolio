@@ -4,7 +4,7 @@ import Projects_Second from "../components/Projects_Second";
 
 const MyProjects = () => {
   return (
-    <div className='w-full h-full bg-cover bg-center custom-img bg-fixed '>
+    <div className='w-screen h-screen bg-cover bg-center custom-img bg-fixed bg-repeat '>
       <NavBar/>
       <Projects_Second/>
     </div>
