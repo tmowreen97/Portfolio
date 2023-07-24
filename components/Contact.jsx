@@ -6,7 +6,7 @@ function Contact(){
           <h1 className="text-5xl md:text-7xl text-left">Contact Me:</h1>
         </div>
         <div className="md:flex justify-between">
-          <div className="max-w-[40%] mx-5 text-left tracking-wider text-md">
+          <div className="max-w-[40%] mx-5 text-left tracking-wider text-md mt-[50px]">
             <p>I would love to hear from you!</p>
             <p>Please feel free to contact me through this form with any questions or business inquiries.</p>
           </div>
@@ -30,7 +30,7 @@ export default Contact;
 
 function ContactForm(){
   return(
-    <form class="bg-white/50 shadow-md rounded px-10 pt-8 pb-8 mb-4 ">
+    <form class="bg-white/40 shadow-md rounded-xl px-10 pt-8 pb-8 mb-4">
     <div class="mb-4">
       <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
         Name
@@ -53,7 +53,7 @@ function ContactForm(){
       <p class="text-red-500 text-xs italic">Please write a message.</p>
     </div>
     <div class="flex items-center justify-center">
-      <button class="rounded shadow text-[#696969] bg-white/70 shadow-gray-600/90  hover:bg-slate-600/50 hover:text-[#F9FBFD] ease-in-out duration-200 cursor-pointer p-[10px] focus:shadow-outline " type="button">
+      <button class="rounded-xl shadow text-[#696969] bg-white/70 shadow-gray-600/90  hover:bg-slate-600/50 hover:text-[#F9FBFD] ease-in-out duration-200 cursor-pointer p-[10px] focus:shadow-outline " type="button">
         Send
       </button>
       {/* <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
