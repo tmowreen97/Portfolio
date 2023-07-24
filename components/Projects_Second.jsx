@@ -38,7 +38,7 @@ function Projects_Second(){
             {
               projectImages.map((image)=>{
                 return(
-                  <ProjectList image={image} />
+                  <ProjectList image={image}/>
                 )
               })
             }

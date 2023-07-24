@@ -29,9 +29,11 @@ function MainHome(){
                   </Link>
                 </div>
                 <div className="text-xl rounded-full shadow-xl text-[#696969] bg-white/70 shadow-gray-600/90 p-8 mx-5 mt-10 hover:bg-slate-600/50 hover:text-[#F9FBFD] hover:scale-[1.35] ease-in-out duration-200 cursor-pointer">
-                  <Link href="https://www.linkedin.com/in/tasreenmowreen/" legacyBehavior>
-                    <a target="_blank" rel="noopener noreferrer"><AiOutlineMail/>
-                      </a></Link>
+                  <Link href="/contact" legacyBehavior>
+                    <a>
+                      <AiOutlineMail/>
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>

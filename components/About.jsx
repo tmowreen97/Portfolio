@@ -57,7 +57,7 @@ function About(){
     <div className=' '>
 
     
-    <div className="w-full h-full justify-center items-center text-center bg-cover bg-center custom-img bg-fixed z-[90]">
+    <div className="w-full h-full justify-center items-center text-center bg-cover bg-center custom-img bg-fixed z-[90] pb-5">
       <div className="md:max-w-[1240px] w-full h-full flex  text-center mx-[8%] justify-center items-center">
         <div className="flex items-center justify-center w-screen h-screen bg-cover bg-center custom-img bg-fixed md:pt-[0%] ">
         <div className="text-left items-center justify-center md:pt-[8%] max-w-[82%] pb-5">
@@ -73,7 +73,7 @@ function About(){
           <div className='flex flex-wrap justify-center pt-[2%]'>
            {skills_array.map((skill)=> {
             return(
-              <div className=' px-[15px] py-[10px] mx-3 rounded-full bg-white/70 object-cover shadow-xl hover:scale-[120%] cursor-pointer ease-in-out duration-300'> 
+              <div key={skill} className=' px-[15px] py-[10px] mx-3 rounded-full bg-white/70 object-cover shadow-xl hover:scale-[120%] cursor-pointer ease-in-out duration-300'> 
                 <Image src={skill.img} alt="/" width={35} height={35}/>
               </div>
             )

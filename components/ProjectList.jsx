@@ -4,8 +4,8 @@ import Image from "next/image";
 function ProjectList({image}){
   return(
     <div className="bg-cover bg-center custom-img bg-fixed bg-repeat">
-    <div className="grid grid-cols-1 text-center pt-5 justify-center p-2 mx-[15%]" key={image.url}>
-    <div className="bg-white/30 md:flex items-center justify-center ">
+    <div className="grid grid-cols-1 text-center pt-5 justify-center items-center p-2 mx-[15%]">
+    <div className="bg-white/20 md:flex items-center justify-evenly hover:scale-[1.05] rounded-xl p-2 ease-in-out duration-200">
       <div className="pr-5 group">
         <Image src={image.url} width='450' height='450'/>
         <div className="flex relative">
@@ -21,7 +21,7 @@ function ProjectList({image}){
         </div>
       </div>
       </div>
-      <div className="text-left md:max-w-[40%] ">
+      <div className="text-left md:max-w-[40%] mx-5">
         {image.description.map((sentence)=>{
           return(
             <p className="text-sm tracking-wider" key={sentence}>{sentence}</p>

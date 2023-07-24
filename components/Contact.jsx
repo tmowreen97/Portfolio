@@ -1,13 +1,16 @@
 function Contact(){
   return(
-    <div className="w-screen h-screen text-center justify-center bg-cover bg-center custom-img bg-fixed">
-      <div className="pt-[10%] ">
-        <div className="md:flex">
-          <div className="max-w-[30%]">
-            <h1 className="text-5xl md:text-7xl text-left">Contact Me:</h1>
-            <p className="text-left ">I would love to hear from you! Leave your name and email so I can get back to you!</p>
+    <div className="min-w-screen h-screen text-center justify-center bg-cover bg-center custom-img bg-fixed ">
+      <div className="pt-[12%] mx-[15%] max-w-[1240px] justify-center items-center text-center">
+        <div className="mb-[15px]">
+          <h1 className="text-5xl md:text-7xl text-left">Contact Me:</h1>
+        </div>
+        <div className="md:flex justify-between">
+          <div className="max-w-[40%] mx-5 text-left tracking-wider text-md">
+            <p>I would love to hear from you!</p>
+            <p>Please feel free to contact me through this form with any questions or business inquiries.</p>
           </div>
-          <div className="max-w-[50%]">
+          <div className="md:w-[45%] bg-cover bg-center custom-img bg-fixed ">
             <ContactForm/>
           </div>
           
@@ -27,7 +30,7 @@ export default Contact;
 
 function ContactForm(){
   return(
-    <form class="bg-white/50 shadow-md rounded px-20 pt-20 pb-8 mb-4">
+    <form class="bg-white/50 shadow-md rounded px-10 pt-8 pb-8 mb-4 ">
     <div class="mb-4">
       <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
         Name
@@ -46,7 +49,7 @@ function ContactForm(){
       <label class="block text-gray-700 text-sm font-bold mb-2" for="message">
         Message
       </label>
-      <textarea class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Enter your email"/>
+      <textarea class="max-h-[125px] min-h-[50px] shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Enter your message"/>
       <p class="text-red-500 text-xs italic">Please write a message.</p>
     </div>
     <div class="flex items-center justify-center">
