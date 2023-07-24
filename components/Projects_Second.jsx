@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ProjectList from "./ProjectList";
 function Projects_Second(){
   const projectImages = [{
     url: "/assets/self-full-categories.png",
@@ -26,44 +27,24 @@ function Projects_Second(){
     //2
   }]
   return(
-    <div className="w-full h-full text-center justify-center ">
-      <div className="md:max-w-[1240px] w-full h-full flex mx-[10%] items-center justify-center text-center  ">
-        <div className="w-screen h-screen md:pt-[10%] pt-[25%]">
-          <div className="text-left">
+    <div className="w-screen min-h-screen text-center justify-center ">
+      <div className=" w-screen min-h-[1240px] flex items-center justify-center text-center ">
+        <div className="w-screen h-screen mb-[5%]">
+          <div className="">
+          <div className="text-left mx-[15%]">
             <h1 className="text-5xl md:text-7xl">Projects:</h1>
           </div>
-          <div className="grid grid-cols-1 text-center max-w-[1240px] pt-5 justify-center pb-[20%]">
-            {projectImages.map((image)=> {
-              return(
-                <div className=" p-2 " key={image.url}>
-                  <div className="bg-white/30 md:flex items-center justify-center ">
-                    <div className="pr-5 group">
-                      <Image src={image.url} width='450' height='450'/>
-                      <div className="flex relative">
-                      <div className="hidden group-hover:block absolute bottom-[100%] right-[50%] justify-center items-center text-xl p-2 text-[#696969] bg-white/70 shadow-gray-600/90 hover:bg-slate-600/50 hover:text-[#F9FBFD] rounded-full m-2">
-                        <Link href={`${image.github}`}legacyBehavior>
-                          <a target="_blank" rel="noopener noreferrer">GitHub</a>
-                        </Link>
-                      </div>
-                      <div className="hidden group-hover:block absolute bottom-[100%] left-[50%] items-center text-xl p-2 text-[#696969] bg-white/70 shadow-gray-600/90 hover:bg-slate-600/50 hover:text-[#F9FBFD] rounded-full m-2">
-                      <Link  href={`${image.demo}`} legacyBehavior>
-                          <a target="_blank" rel="noopener noreferrer">Demo</a>
-                        </Link>
-                      </div>
-                    </div>
-                    </div>
-                    <div className="text-left md:max-w-[40%] ">
-                      {image.description.map((sentence)=>{
-                        return(
-                          <p className="text-sm tracking-wider" key={sentence}>{sentence}</p>
-                        )
-                      })}
-                    </div>
-                  </div>
-                </div>
-              )
-            })}
+          <div className="justify-center ">
+            {
+              projectImages.map((image)=>{
+                return(
+                  <ProjectList image={image} />
+                )
+              })
+            }
+
           </div>  
+        </div>
         </div>
       </div>
     </div>
