@@ -11,12 +11,11 @@ function NavBar(){
   }
   return(
     <div className='fixed w-full h-20 z-[100] '>
-      <div className="flex justify-between items-center w-full h-full px-10 2xl:px-16 ">
+      <div className="flex justify-between items-center w-full h-full px-10 2xl:px-16 tracking-wider">
         <Link href='/'>
           <div className="hover:scale[1.25]">
             <Image src={"/assets/tm-logo-light-white.png"} alt="/" width='100' height='45'/>
           </div>
-          
         </Link>
       <div>
         <ul className="hidden md:flex">
@@ -39,9 +38,9 @@ function NavBar(){
       </div>
       </div>
       {/* overlay for behind when menu is toggled */}
-      <div className={toggleMenu ? "fixed left-0 top-0 w-full h-screen bg-black/40": ''}>
+      <div className={toggleMenu ? "fixed left-0 top-0 w-full h-screen bg-black/40 tracking-wider": ''}>
         <div className={
-          toggleMenu ? "fixed left-0 top-0 w-[75%] h-screen bg-[#20203d] ease-in duration-500 p-10": "fixed left-[-100%] top-0 h-screen ease-in duration-500 p-10"
+          toggleMenu ? "fixed left-0 top-0 w-[75%] h-screen bg-[#20203d] ease-in duration-500 p-10": "fixed left-[-100%] top-0 h-screen ease-in duration-500 p-10 tracking-wider"
         }>
           {/* top section of menu bar */}
           <div className="flex w-full items-center justify-between">
@@ -50,12 +49,12 @@ function NavBar(){
               <AiOutlineClose/>
             </div>
           </div>
-          <div className=" border-gray-300 my-10 hover:font-bold">
+          <div className=" border-gray-300 my-10 ">
             <p className="w-[85%] md:w-[90%]">Let's create something together</p>
           </div>
           {/* Menu list */}
-          <div className="py-4 px-4 flex flex-col">
-            <ul className="uppercase text-sm">
+          <div className="py-4 px-4 flex flex-col tracking-wider ease-in-out duration-200">
+            <ul onClick={handleMenu} className="uppercase text-sm">
               <Link href='/'>
                 <li className="py-4 hover:font-extrabold">Home</li>
               </Link>
@@ -73,14 +72,27 @@ function NavBar(){
             <div className="pt-[60px]">
               <p className="my-8 uppercase tracking-widest text-sm">Let's connect:</p>
               <div className="flex justify-between items-center w-full sm-w-[80%] px-[10%]">
-                <div className="rounded-full shadow-lg shadow-black p-3 bg-slate-600 hover:bg-white/50 cursor-pointer hover:scale-[1.35] ease-in-out duration-200" >
-                  <AiFillLinkedin/>
+                <div onClick={handleMenu} className="rounded-full shadow-lg shadow-black p-3 bg-slate-600 hover:bg-white/50 cursor-pointer hover:scale-[1.35] ease-in-out duration-200" >
+                  <Link href="https://www.linkedin.com/in/tasreenmowreen" legacyBehavior>
+                    <a target="_blank" rel="noopener noreferrer">
+                      <AiFillLinkedin/>
+                    </a>
+                  </Link>
                 </div>
-                <div className="rounded-full shadow-lg shadow-black p-3 bg-slate-600 hover:bg-white/50 cursor-pointer hover:scale-[1.35] ease-in-out duration-200">
-                  <AiFillGithub/>
+                <div onClick={handleMenu} className="rounded-full shadow-lg shadow-black p-3 bg-slate-600 hover:bg-white/50 cursor-pointer hover:scale-[1.35] ease-in-out duration-200">
+                <Link href="https://github.com/tmowreen97" legacyBehavior>
+                    <a target="_blank" rel="noopener noreferrer">
+                      <AiFillGithub/>
+                    </a>
+                  </Link>
+                  
                 </div>
-                <div className="rounded-full shadow-lg shadow-black p-3 bg-slate-600 hover:bg-white/50 cursor-pointer hover:scale-[1.35] ease-in-out duration-200">
-                  <AiOutlineMail/>
+                <div onClick={handleMenu} className="rounded-full shadow-lg shadow-black p-3 bg-slate-600 hover:bg-white/50 cursor-pointer hover:scale-[1.35] ease-in-out duration-200">
+                <Link href="/contact" legacyBehavior>
+                    <a>
+                      <AiOutlineMail/>
+                    </a>
+                  </Link>
                 </div>
                 
                 
