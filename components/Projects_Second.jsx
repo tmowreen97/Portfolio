@@ -2,8 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import ProjectList from "./ProjectList";
 import {motion} from 'framer-motion';
+import { useState } from "react";
 
 function Projects_Second(){
+  let timeDelay = 0.6
   const projectImages = [{
     title: "Self/Full",
     tag: "Live a Full Life with Self-Care",
@@ -38,24 +40,26 @@ function Projects_Second(){
     <div className="w-screen min-h-screen text-center justify-center ">
       <div className=" w-screen min-h-[1240px] flex items-center justify-center text-center ">
         <div className="w-screen h-screen mb-[5%]">
-          <div className="">
-          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 , transition:{delay:0.2}}} className="text-left mx-[15%]">
+          {/* <div className=""> */}
+          <motion.div initial={{opacity:0}} whileInView={{opacity:1, transition:{delay:0.2}}} className="text-left mx-[15%] mb-2">
             <h1 className="text-5xl md:text-7xl">Projects:</h1>
           </motion.div>
-          <motion.div className="justify-center ">
+          <motion.div  className="justify-center ">
             {
               projectImages.map((image)=>{
+                
+                timeDelay+=0.4
                 return(
-                  <span key={image}>
+                  <motion.div initial={{ opacity: 0 }} animate={{opacity:1, transition:{delay:timeDelay}}} key={image}>
                     <ProjectList image={image}/>
-                  </span>
+                  </motion.div>
                   
                 )
               })
             }
 
           </motion.div>  
-        </div>
+        {/* </div> */}
         </div>
       </div>
     </div>

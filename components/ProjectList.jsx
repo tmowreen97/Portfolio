@@ -5,8 +5,7 @@ import {delay, motion} from "framer-motion";
 function ProjectList({image}){
   return(
     <div className="bg-cover bg-center custom-img bg-fixed bg-repeat">
-    <motion.div initial={{ opacity: 0 }}
-  whileInView={{ opacity: 1 , transition:{delay:0.4}}} className="grid grid-cols-1 text-center pt-5 justify-center items-center p-2 mx-[15%]">
+    <motion.div  className="grid grid-cols-1 text-center pt-5 justify-center items-center p-2 mx-[15%]">
     <div className="bg-white/20 shadow-xl md:flex items-center justify-evenly hover:scale-[1.1] rounded-xl p-2 ease-in-out duration-200">
       <div className="pr-5 group">
         <motion.div whileHover={[{ scale: 1.1 }, {rotate:-3}]} transition={{delay:.1}} className="rounded-xl overflow-hidden ">
