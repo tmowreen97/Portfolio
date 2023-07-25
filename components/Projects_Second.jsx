@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import ProjectList from "./ProjectList";
+import {motion} from 'framer-motion';
+
 function Projects_Second(){
   const projectImages = [{
     title: "Self/Full",
@@ -37,19 +39,22 @@ function Projects_Second(){
       <div className=" w-screen min-h-[1240px] flex items-center justify-center text-center ">
         <div className="w-screen h-screen mb-[5%]">
           <div className="">
-          <div className="text-left mx-[15%]">
+          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 , transition:{delay:0.2}}} className="text-left mx-[15%]">
             <h1 className="text-5xl md:text-7xl">Projects:</h1>
-          </div>
-          <div className="justify-center ">
+          </motion.div>
+          <motion.div className="justify-center ">
             {
               projectImages.map((image)=>{
                 return(
-                  <ProjectList image={image}/>
+                  <span key={image}>
+                    <ProjectList image={image}/>
+                  </span>
+                  
                 )
               })
             }
 
-          </div>  
+          </motion.div>  
         </div>
         </div>
       </div>

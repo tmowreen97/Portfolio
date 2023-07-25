@@ -1,11 +1,13 @@
+import {motion} from 'framer-motion';
+
 function Contact(){
   return(
     <div className="min-w-screen h-screen text-center justify-center bg-cover bg-center custom-img bg-fixed ">
       <div className="pt-[12%] mx-[15%] max-w-[1240px] justify-center items-center text-center">
-        <div className="mb-[15px]">
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 , transition:{delay:0.2}}}className="mb-[15px]">
           <h1 className="text-5xl md:text-7xl text-left">Contact Me:</h1>
-        </div>
-        <div className="md:flex justify-between">
+        </motion.div>
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 , transition:{delay:0.6}}} className="md:flex justify-between">
           <div className="max-w-[40%] mx-5 text-left tracking-wider text-md mt-[50px]">
             <p>I would love to hear from you!</p>
             <p>Please feel free to contact me through this form with any questions or business inquiries.</p>
@@ -14,10 +16,7 @@ function Contact(){
             <ContactForm/>
           </div>
           
-        </div>
-      {/* <p class="text-center text-gray-500 text-xs">
-        {/* &copy;2020 Acme Corp. All rights reserved. */}
-      {/* </p> */}
+        </motion.div>
   </div>
     </div>
     

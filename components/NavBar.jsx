@@ -12,7 +12,12 @@ function NavBar(){
   return(
     <div className='fixed w-full h-20 z-[100] '>
       <div className="flex justify-between items-center w-full h-full px-10 2xl:px-16 ">
-        <Image src={"/assets/tm-logo-light-white.png"} alt="/" width='100' height='45'/>
+        <Link href='/'>
+          <div className="hover:scale[1.25]">
+            <Image src={"/assets/tm-logo-light-white.png"} alt="/" width='100' height='45'/>
+          </div>
+          
+        </Link>
       <div>
         <ul className="hidden md:flex">
         <Link href='/'>
