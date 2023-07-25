@@ -9,7 +9,15 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {}
+    extend: {
+      animation:{},
+      keyframes:{
+        typing: {
+          from: { width: "0" },
+          to: { width: "14ch" }
+        }
+      },
+    }
   },
   plugins: [],
 }
