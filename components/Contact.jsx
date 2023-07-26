@@ -29,35 +29,53 @@ export default Contact;
 
 function ContactForm(){
   return(
-    <form class="bg-white/40 shadow-md rounded-xl px-10 pt-8 pb-8 mb-4">
-    <div class="mb-4">
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+    <form 
+    action="https://formsubmit.co/tmowreen97@gmail.com" 
+    method="POST" 
+    className="bg-white/40 shadow-md rounded-xl px-10 pt-8 pb-8 mb-4">
+    <div className="mb-4">
+      <label className="block text-gray-700 text-sm font-bold mb-2">
         Name
       </label>
-      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Enter your name"/>
-      <p class="text-red-500 text-xs italic">Please write your name.</p>
+      <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+      id="name" 
+      type="text" 
+      name="name" 
+      placeholder="Enter your name"
+      required
+      />
+      <p className="text-red-500 text-xs italic">Please write your name.</p>
     </div>
-    <div class="mb-6">
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+    <div className="mb-6">
+      <label className="block text-gray-700 text-sm font-bold mb-2">
         Email
       </label>
-      <input class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Enter your email"/>
-      <p class="text-red-500 text-xs italic">Please write your email.</p>
+      <input className="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" 
+      id="email" 
+      name="email" 
+      type="email" 
+      placeholder="Enter your email"
+      required
+      />
     </div>
-    <div class="mb-6">
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="message">
+    <div className="mb-6">
+      <label className="block text-gray-700 text-sm font-bold mb-2">
         Message
       </label>
-      <textarea class="max-h-[125px] min-h-[50px] shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Enter your message"/>
-      <p class="text-red-500 text-xs italic">Please write a message.</p>
+      <textarea className="max-h-[125px] min-h-[50px] shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" 
+      id="message" 
+      type="text" 
+      name="message" 
+      placeholder="Enter your message"
+      required
+      />
+      <p className="text-red-500 text-xs italic">Please write a message.</p>
     </div>
-    <div class="flex items-center justify-center">
-      <button class="rounded-xl shadow text-[#696969] bg-white/70 shadow-gray-600/90  hover:bg-slate-600/50 hover:text-[#F9FBFD] ease-in-out duration-200 cursor-pointer p-[10px] focus:shadow-outline " type="button">
+    <div className="flex items-center justify-center">
+      <button className="rounded-xl shadow text-[#696969] bg-white/70 shadow-gray-600/90  hover:bg-slate-600/50 hover:text-[#F9FBFD] ease-in-out duration-200 cursor-pointer p-[10px] focus:shadow-outline " 
+      type="submit">
         Send
       </button>
-      {/* <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
-        Forgot Password?
-      </a> */}
     </div>
   </form>
   )
