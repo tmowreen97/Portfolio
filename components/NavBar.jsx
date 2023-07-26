@@ -1,19 +1,33 @@
-import {React, useState} from "react";
+import {React, useState, useEffect} from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {AiOutlineMenu, AiOutlineClose, AiFillLinkedin, AiFillGithub, AiOutlineMail} from 'react-icons/ai';
 
 function NavBar(){
   const[toggleMenu, setToggleMenu]= useState(false)
-
+  const [shadow, setShadow] = useState(false)
+  useEffect(() => {
+    console.log(window.scrollY)
+    const handleShadow = () => {
+      if (window.scrollY>=90) {
+        setShadow(true)
+      } else {
+        setShadow(false)
+      }
+    }
+    
+    window.addEventListener('scroll', handleShadow)
+  }, []);
+  console.log(shadow)
   const handleMenu = () => {
     setToggleMenu(!toggleMenu)
   }
+  // bg-[#9694F2]/90
   return(
-    <div className='fixed w-full h-12.5 z-[100] shadow-xl bg-[#9694F2]/90'>
+    <div className={shadow ? "fixed w-full h-[62px] z-[100] shadow-xl  bg-[#7fa9f1]/90" : "fixed w-full h-[62px] z-[100] "}>
       <div className="flex justify-between items-center w-full h-full px-10 2xl:px-16 tracking-wider">
         <Link href='/'>
-          <div className="hover:scale[1.25]">
+          <div className="pt-2 hover:drop-shadow-xl">
             <Image src={"/assets/tm-logo-light-white.png"} alt="/" width='100' height='45'/>
           </div>
         </Link>

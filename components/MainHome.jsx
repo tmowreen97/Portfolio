@@ -8,7 +8,7 @@ function MainHome(){
   const [view, setView]= useState(false)
   const ref = useRef(null)
   const isInView = useInView(ref)
-  console.log(isInView)
+  
 
   return(
     <div className="w-full h-full text-center justify-center">
