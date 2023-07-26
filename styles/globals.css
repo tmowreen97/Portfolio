@@ -12,21 +12,27 @@ html{
     @apply bg-[#F9FBFD] text-[#F9FBFD] tracking-wide
   }
   h1, h2, h3, h4{
-    @apply font-extrabold
+    @apply font-extrabold;
   }
 
   h5, h6{
-    @apply font-semibold
+    @apply font-semibold;
+    @apply text-shadow;
+    @apply shadow-[#444444]/40
   }
-
+  p{
+    @apply text-shadow;
+    @apply shadow-[#444444]/40;
+    @apply font-medium
+  }
   .custom-img{
     background-image: url('/assets/giphy-3.gif');
     background-size: cover;
     background-repeat: repeat;
     background-attachment: scroll;
-
+    opacity: 96%;
   }
-
+  
   li{
     @apply cursor-pointer
   }

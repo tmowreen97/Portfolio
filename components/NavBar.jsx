@@ -10,7 +10,7 @@ function NavBar(){
     setToggleMenu(!toggleMenu)
   }
   return(
-    <div className='fixed w-full h-20 z-[100] '>
+    <div className='fixed w-full h-12.5 z-[100] shadow-xl bg-[#9694F2]/90'>
       <div className="flex justify-between items-center w-full h-full px-10 2xl:px-16 tracking-wider">
         <Link href='/'>
           <div className="hover:scale[1.25]">
