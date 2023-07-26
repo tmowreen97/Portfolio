@@ -10,7 +10,7 @@ function Projects_Second(){
     title: "Self/Full",
     tag: "Live a Full Life with Self-Care",
     url: "/assets/self-full-categories.png",
-    description: ["An application that promotes self care to live a fuller life style.",  "Self/Full is the one stop place for all your self-care needs. Self-care has been clinically proven to help alleviate depression and anxiety. At Self/Full you can learn more about what self-care is, how you can incorporate it in your daily life, the benefits you gain from it and learn from others also working on their self-care."],
+    description: ["Self/Full is the one stop place for all your self-care needs.", "Self-care has been clinically proven to help alleviate depression and anxiety. At Self/Full you can learn about the different types of self-care, their benefits and how you can incorporate them in your life. You can also learn from others who have started their self-care journey."],
     github: "https://github.com/tmowreen97/Phase-5-Project",
     demo: "https://youtu.be/r5Gfvc3t7EI",
     stack: "React, JavaScript, HTML, CSS, Ruby, Ruby on Rails, PostgreSQL"
@@ -20,7 +20,7 @@ function Projects_Second(){
     title: "Critiquer",
     tag: "Where Everyone's a Critic",
     url: "/assets/critiquer.png",
-    description: ["View and critique movies with other users.", "As a movie lover (primarily horror) I created this application where users can view a list of movies, review them and see what other users think about them as well. The list of movies is populated by the movies manually added to the database by the users. This is a great place for people to find new movies to watch and share their opinion on their favorites."],
+    description: ["View and critique movies with other users.", "As a movie lover I created this application where users can see and review a list of movies, and see other user reviews as well. The list of movies is populated by those manually added to the collection by the users, in addition to the ones already in the database. Critiquer is a great place for people to find new movies to watch and share their opinion on their favorites."],
     github: "https://github.com/tmowreen97/Phase-4-Project",
     demo: "https://youtu.be/A8pnMy8bvwE",
     stack: "React, JavaScript, HTML, CSS, Ruby, Ruby on Rails, PostgreSQL"
