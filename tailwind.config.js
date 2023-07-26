@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
       animation:{
-        typing: "typing 3s steps(20) 1 alternate, blink 1.2s infinite "
+        typing: "typing 2s steps(20) 1 alternate, blink 1.2s infinite "
       },
       keyframes:{
         typing: {
