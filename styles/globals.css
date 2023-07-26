@@ -20,7 +20,7 @@ html{
     @apply text-shadow;
     @apply shadow-[#444444]/40
   }
-  p{
+  p, li{
     @apply text-shadow;
     @apply shadow-[#444444]/40;
     @apply font-medium
@@ -30,7 +30,7 @@ html{
     background-size: cover;
     background-repeat: repeat;
     background-attachment: scroll;
-    opacity: 96%;
+    /* opacity: 96%; */
   }
   
   li{

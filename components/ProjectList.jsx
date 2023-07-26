@@ -1,14 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
 import {delay, motion} from "framer-motion";
+import {BsArrowReturnRight} from 'react-icons/bs';
 
 function ProjectList({image}){
   return(
-    <div className="bg-cover bg-center custom-img bg-fixed bg-repeat">
-    <motion.div  className="grid grid-cols-1 text-center pt-5 justify-center items-center p-2 mx-[15%]">
-    <div className="bg-white/20 shadow-xl md:flex items-center justify-evenly hover:scale-[1.1] rounded-xl p-2 ease-in-out duration-200">
-      <div className="pr-5 group">
-        <motion.div whileHover={[{ scale: 1.1 }, {rotate:-3}]} transition={{delay:.1}} className="rounded-xl overflow-hidden ">
+    <div className="bg-cover bg-center custom-img bg-fixed bg-repeat z-95">
+    <div className="grid grid-cols-1 text-center pt-5 justify-center items-center p-2 mx-[15%]">
+    <div className="hover:bg-slate-500/30 bg-[#ECE4CC]/20 shadow-xl md:flex items-center justify-evenly hover:scale-[1.1] rounded-xl p-2 ease-in-out duration-200">
+      <div className="pr-5 group ">
+        <motion.div whileHover={[{ scale: 1.25 }, {rotate:-3}]} transition={{delay:.1}} className="z-99 rounded-xl overflow-hidden opacity-100">
           <Image src={image.url} width='450' height='450'/>
         </motion.div>
         <div className="flex relative">
@@ -24,17 +25,22 @@ function ProjectList({image}){
         </div>
       </div>
       </div>
-      <div className="text-left md:max-w-[45%] mx-5 tracking-wider">
+      <div className="text-left md:max-w-[45%] mx-5 tracking-wide">
         <h5 className="font-extrabold">{image.title}</h5>
         <h6 className="italic text-sm">{image.tag}</h6>
         {image.description.map((sentence)=>{
           return(
-            <p className="text-sm" key={sentence}>{sentence}</p>
+            <p className="text-base/5 hover:text-shadow-lg" key={sentence}>{sentence}</p>
           )
         })}
+        <div className="flex">
+          <BsArrowReturnRight/>
+          <p className="text-sm ml-2">{image.stack}</p>
+        </div>
+        
       </div>
     </div>
-  </motion.div>
+  </div>
     </div>
     
   )

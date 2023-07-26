@@ -59,9 +59,9 @@ function About(){
   ]
 
   return(
-    <div id='about' className="w-full h-full justify-center items-center text-center bg-cover bg-center custom-img bg-fixed z-[90] pb-5">
+    <div id='about' className="w-screen min-h-screen justify-center items-center text-center bg-cover bg-center custom-img bg-fixed z-[90] pb-5">
       <div className="md:max-w-[1240px] w-full h-full flex  text-center mx-[8%] justify-center items-center">
-        <div className="flex items-center justify-center w-screen h-screen bg-cover bg-center custom-img bg-fixed md:pt-[0%] ">
+        <div className="flex items-center justify-center w-screen h-screen bg-cover bg-center custom-img bg-fixed md:pt-5 ">
         <div className="text-left items-center justify-center md:pt-[8%] max-w-[82%] pb-5">
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition:{delay:0.2}}} className='bg-cover bg-center custom-img bg-fixed'>
             <h1 className="text-5xl md:text-7xl">Who am I?</h1>

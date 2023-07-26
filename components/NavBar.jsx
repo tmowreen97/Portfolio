@@ -7,8 +7,8 @@ function NavBar(){
   const[toggleMenu, setToggleMenu]= useState(false)
   const [shadow, setShadow] = useState(false)
   useEffect(() => {
-    console.log(window.scrollY)
     const handleShadow = () => {
+      console.log(window.scrollY)
       if (window.scrollY>=90) {
         setShadow(true)
       } else {
@@ -24,7 +24,7 @@ function NavBar(){
   }
   // bg-[#9694F2]/90
   return(
-    <div className={shadow ? "fixed w-full h-[62px] z-[100] shadow-xl  bg-[#7fa9f1]/90" : "fixed w-full h-[62px] z-[100] "}>
+    <div className={shadow ? "fixed w-full h-[62px] z-[100] shadow-xl bg-[#7fa9f1]/90 ease-in-out duration-200" : "fixed w-full h-[62px] z-[100] ease-in-out duration-200 "}>
       <div className="flex justify-between items-center w-full h-full px-10 2xl:px-16 tracking-wider">
         <Link href='/'>
           <div className="pt-2 hover:drop-shadow-xl">

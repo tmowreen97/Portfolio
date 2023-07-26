@@ -36,21 +36,22 @@ function Projects_Second(){
     stack: "React, JavaScript, HTML, CSS, Ruby, Ruby on Rails"
     //2
   }]
+  // 45 initial={{opacity:0}} whileInView={{opacity:1, transition:{delay:0.2}}}
+  // 54 animate={{opacity:1, transition:{delay:timeDelay}}}
   return(
-    <div className="w-screen min-h-screen text-center justify-center ">
+    <div className="w-screen min-h-screen text-center justify-center pb-20 pt-4">
       <div className=" w-screen min-h-[1240px] flex items-center justify-center text-center ">
         <div className="w-screen h-screen mb-[5%]">
           {/* <div className=""> */}
           <motion.div initial={{opacity:0}} whileInView={{opacity:1, transition:{delay:0.2}}} className="text-left mx-[15%] mb-2">
             <h1 className="text-5xl md:text-7xl">Projects:</h1>
           </motion.div>
-          <motion.div  className="justify-center ">
+          <motion.div className="justify-center ">
             {
               projectImages.map((image)=>{
-                
                 timeDelay+=0.4
                 return(
-                  <motion.div initial={{ opacity: 0 }} animate={{opacity:1, transition:{delay:timeDelay}}} key={image}>
+                  <motion.div initial={{ opacity: 0 }} animate={{opacity:1, transition:{delay:timeDelay}}}  key={image} className="" >
                     <ProjectList image={image}/>
                   </motion.div>
                   
