@@ -83,7 +83,7 @@ function ContactForm({setShowThankYou}){
       />
       <p className="text-red-500 text-xs italic">Please write a message.</p>
     </div>
-    <input type="hidden" name="_next" value="http://localhost:3000/thank-you"/>
+    <input type="hidden" name="_next" value="https://tasreen-mowreen.com/thank-you"/>
     {/* <input type="hidden" name="_captcha" value="false"/> */}
     <div className="flex items-center justify-center">
       <button className="rounded-xl shadow text-[#696969] bg-white/70 shadow-gray-600/90  hover:bg-slate-600/50 hover:text-[#F9FBFD] ease-in-out duration-200 cursor-pointer p-[10px] focus:shadow-outline " 
