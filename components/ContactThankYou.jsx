@@ -1,6 +1,6 @@
 import {motion} from 'framer-motion';
 
-function Contact(){
+function ContactThankYou(){
   return(
     <div className="min-w-screen h-screen text-center justify-center bg-cover bg-center custom-img bg-fixed ">
       <div className="pt-[12%] mx-[15%] max-w-[1240px] justify-center items-center text-center">
@@ -13,7 +13,7 @@ function Contact(){
             <p>Please feel free to contact me through this form with any questions or business inquiries.</p>
           </div>
           <div className="md:w-[45%] bg-cover bg-center custom-img bg-fixed ">
-            <ContactForm/>
+            <ThankYouDiv/>
           </div>
           
         </motion.div>
@@ -23,17 +23,14 @@ function Contact(){
     
 )
 }
+export default ContactThankYou;
 
-export default Contact;
-
-
-function ContactForm(){
+function ThankYouDiv(){
   return(
-    <form 
-    action="https://formsubmit.co/tmowreen97@gmail.com" 
-    method="POST" 
-    className="bg-white/40 shadow-md rounded-xl px-10 pt-8 pb-8 mb-4">
-    <div className="mb-4">
+    <div className="bg-white/40 shadow-md rounded-xl px-10 pt-8 pb-8 mb-4">
+      <h2>Thank You</h2>
+    {/* <div className="mb-4">
+      <h1>Thank You!</h1>
       <label className="block text-gray-700 text-sm font-bold mb-2">
         Name
       </label>
@@ -71,13 +68,12 @@ function ContactForm(){
       />
       <p className="text-red-500 text-xs italic">Please write a message.</p>
     </div>
-    <input type="hidden" name="_next" value="https://tasreen-mowreen.com/thank-you"/>
     <div className="flex items-center justify-center">
       <button className="rounded-xl shadow text-[#696969] bg-white/70 shadow-gray-600/90  hover:bg-slate-600/50 hover:text-[#F9FBFD] ease-in-out duration-200 cursor-pointer p-[10px] focus:shadow-outline " 
       type="submit">
         Send
       </button>
-    </div>
-  </form>
+   </div> */}
+  </div>
   )
 }

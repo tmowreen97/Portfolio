@@ -3,7 +3,7 @@ import NavBar from "../components/NavBar"
 
 const MyContact = () => {
   return(
-    <div className="">
+    <div>
       <NavBar/>
       <Contact/>
     </div>
