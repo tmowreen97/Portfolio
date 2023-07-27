@@ -3,7 +3,7 @@ import Link from "next/link";
 import {BsArrowRightCircle, BsArrowLeftCircle} from "react-icons/bs";
 
 function Projects(){
-
+//initial slideshow idea 
   const [projectSelect, setProjectSelect]= useState(0)
   function handleRight(){
     if(projectSelect<2){

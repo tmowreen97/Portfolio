@@ -1,4 +1,5 @@
 import {motion} from 'framer-motion';
+import Image from 'next/image';
 
 function ContactThankYou(){
   return(
@@ -12,7 +13,7 @@ function ContactThankYou(){
             <p>I would love to hear from you!</p>
             <p>Please feel free to contact me through this form with any questions or business inquiries.</p>
           </div>
-          <div className="md:w-[45%] bg-cover bg-center custom-img bg-fixed ">
+          <div className="md:w-[40%] bg-cover bg-center custom-img bg-fixed pt-5 mr-10 ">
             <ThankYouDiv/>
           </div>
           
@@ -27,53 +28,17 @@ export default ContactThankYou;
 
 function ThankYouDiv(){
   return(
-    <div className="bg-white/40 shadow-md rounded-xl px-10 pt-8 pb-8 mb-4">
-      <h2>Thank You</h2>
-    {/* <div className="mb-4">
-      <h1>Thank You!</h1>
-      <label className="block text-gray-700 text-sm font-bold mb-2">
-        Name
-      </label>
-      <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
-      id="name" 
-      type="text" 
-      name="name" 
-      placeholder="Enter your name"
-      required
-      />
-      <p className="text-red-500 text-xs italic">Please write your name.</p>
+    <div>
+      <motion.div initial={{opacity:0, scale:.5}}  animate={{opacity:1, scale:1.2, transition:{duration:1, delay:1}}} className="bg-white/40 flex justify-evenly shadow-md rounded-xl  pt-8 pb-8 text-left">
+        <div>
+          <p className='text-xl'>Thank you for your message!</p>
+          <p className='text-md'>I'll get back to you as soon as possible.</p>
+        </div>
+        <div className='pl-5 pt-2'>
+          <Image src={'/assets/check.gif'} width={40} height={40}/>
+        </div>
+      </motion.div>
     </div>
-    <div className="mb-6">
-      <label className="block text-gray-700 text-sm font-bold mb-2">
-        Email
-      </label>
-      <input className="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" 
-      id="email" 
-      name="email" 
-      type="email" 
-      placeholder="Enter your email"
-      required
-      />
-    </div>
-    <div className="mb-6">
-      <label className="block text-gray-700 text-sm font-bold mb-2">
-        Message
-      </label>
-      <textarea className="max-h-[125px] min-h-[50px] shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" 
-      id="message" 
-      type="text" 
-      name="message" 
-      placeholder="Enter your message"
-      required
-      />
-      <p className="text-red-500 text-xs italic">Please write a message.</p>
-    </div>
-    <div className="flex items-center justify-center">
-      <button className="rounded-xl shadow text-[#696969] bg-white/70 shadow-gray-600/90  hover:bg-slate-600/50 hover:text-[#F9FBFD] ease-in-out duration-200 cursor-pointer p-[10px] focus:shadow-outline " 
-      type="submit">
-        Send
-      </button>
-   </div> */}
-  </div>
+
   )
 }

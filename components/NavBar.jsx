@@ -8,7 +8,6 @@ function NavBar(){
   const [shadow, setShadow] = useState(false)
   useEffect(() => {
     const handleShadow = () => {
-      console.log(window.scrollY)
       if (window.scrollY>=90) {
         setShadow(true)
       } else {
