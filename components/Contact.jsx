@@ -56,7 +56,6 @@ function ContactForm({setShowThankYou}){
       placeholder="Enter your name"
       required
       />
-      <p className="text-red-500 text-xs italic">Please write your name.</p>
     </div>
     <div className="mb-6">
       <label className="block text-gray-700 text-sm font-bold mb-2">
@@ -81,7 +80,6 @@ function ContactForm({setShowThankYou}){
       placeholder="Enter your message"
       required
       />
-      <p className="text-red-500 text-xs italic">Please write a message.</p>
     </div>
     <input type="hidden" name="_next" value="https://tasreen-mowreen.com/thank-you"/>
     {/* <input type="hidden" name="_captcha" value="false"/> */}
