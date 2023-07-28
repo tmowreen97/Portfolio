@@ -17,7 +17,6 @@ function NavBar(){
     
     window.addEventListener('scroll', handleShadow)
   }, []);
-  console.log(shadow)
   const handleMenu = () => {
     setToggleMenu(!toggleMenu)
   }
