@@ -2,15 +2,18 @@ import Link from "next/link";
 import Image from "next/image";
 import {delay, motion} from "framer-motion";
 import {BsArrowReturnRight} from 'react-icons/bs';
+import { useState } from "react";
 
 function ProjectList({image}){
+  const [showGif, setShowGif] = useState(false)
+  console.log(showGif)
   return(
     <div className="bg-cover bg-center custom-img bg-fixed bg-repeat z-95">
     <div className="grid grid-cols-1 text-center pt-5 justify-center items-center p-2 mx-[15%]">
     <div className="hover:bg-slate-500/30 bg-[#ECE4CC]/20 shadow-xl md:flex items-center justify-evenly hover:scale-[1.1] rounded-xl p-2 ease-in-out duration-200">
       <div className="pr-5 group ">
-        <motion.div whileHover={[{ scale: 1.25 }, {rotate:-3}]} transition={{delay:.1}} className="z-99 rounded-xl overflow-hidden opacity-100">
-          <Image src={image.url} width='450' height='450'/>
+        <motion.div whileHover={[{ scale: 1.25 }, {rotate:-3}]} onHoverStart={()=>setShowGif(true)} onHoverEnd={()=>setShowGif(false)} transition={{delay:.1}} className="z-99 rounded-xl overflow-hidden opacity-100">
+          {showGif ? <Image src={image.gif} width='450' height='450'/> :<Image src={image.url} width='450' height='450'/>}
         </motion.div>
         <div className="flex relative">
         <div className="hidden group-hover:block absolute bottom-[100%] right-[50%] justify-center items-center text-xl p-2 text-[#696969] bg-white/70 shadow-gray-600/90 hover:bg-slate-600/50 hover:text-[#F9FBFD] rounded-full m-2">
