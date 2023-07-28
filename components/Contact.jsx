@@ -14,11 +14,11 @@ function Contact(){
   return(
     <div className="min-w-screen h-screen text-center justify-center bg-cover bg-center custom-img bg-fixed ">
       <div className="pt-[12%] mx-[15%] max-w-[1240px] justify-center items-center text-center">
-        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 , transition:{delay:0.2}}}className="mb-[15px]">
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 , transition:{delay:0.2}}}className="mb-[15px] mt-[30%] md:mt-0">
           <h1 className="text-5xl md:text-7xl text-left">Contact Me:</h1>
         </motion.div>
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 , transition:{delay:0.6}}} className="md:flex justify-between">
-          <div className="max-w-[40%] mx-5 text-left tracking-wider text-md mt-[50px]">
+          <div className="md:max-w-[40%] md:mx-5 mx-2 text-left tracking-wider text-md mt-[50px] mb-10">
             <p>I would love to hear from you!</p>
             <p>Please feel free to contact me through this form with any questions or business inquiries.</p>
           </div>
@@ -73,7 +73,7 @@ function ContactForm({setShowThankYou}){
       <label className="block text-gray-700 text-sm font-bold mb-2">
         Message
       </label>
-      <textarea className="max-h-[125px] min-h-[50px] shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" 
+      <textarea className="md:max-h-[125px] max-h-[100px] min-h-[50px] shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" 
       id="message" 
       type="text" 
       name="message" 
