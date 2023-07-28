@@ -19,7 +19,8 @@ module.exports = {
         lg: '0 8px 16px var(--tw-shadow-color)',
       },
       animation:{
-        typing: "typing 2s steps(20) 1 alternate, blink 1.2s infinite "
+        typing: "typing 2s steps(20)  1 alternate, blink 1.2s infinite ",
+        typing_sm: "typing_sm 2s steps(15) 1 alternate, blink 1.2s infinite "
       },
       keyframes:{
         typing: {
@@ -29,6 +30,15 @@ module.exports = {
           },
           "100%": {
             width: "100%"
+          }  
+        },
+        typing_sm: {
+          "0%": {
+            width: "0%",
+            visibility: "hidden"
+          },
+          "100%": {
+            width: "80%"
           }  
         },
         blink: {
