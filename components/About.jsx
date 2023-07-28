@@ -63,21 +63,21 @@ function About(){
   ]
 
   return(
-    <div id='about' className="w-full min-h-full text-center justify-center   bg-cover bg-center custom-img bg-fixed z-[90] pb-2">
+    <div id='about' className="w-full min-h-full text-center justify-center bg-cover bg-center custom-img bg-fixed z-[90] pb-2">
       <div className="max-w-[1240px] w-full h-full flex md:mx-[10%] mx-[15%] items-center justify-center text-center">
         <div className="flex items-center justify-center w-full h-full bg-cover bg-center custom-img bg-fixed md:pt-5 ">
-        <div className="text-left items-center justify-center md:pt-[8%]  md:max-w-[82%] w-full h-screen pb-5 mt-[100%] md:mt-[0%] ">
+        <div className="text-left items-center justify-center md:pt-[8%]  md:max-w-[82%] w-full h-screen pb-5 mt-[40%] md:mt-[0%] ">
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition:{delay:0.2}}} className='bg-cover bg-center custom-img bg-fixed'>
             <h1 className="text-4xl md:text-7xl ">Who am I?</h1>
           </motion.div>
-        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition:{delay:0.6}}} className=" font-medium md:pl-5 pt-10 pb-8 z-[99] tracking-wider bg-cover bg-center custom-img bg-fixed items-center justify-between ">
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition:{delay:0.6}}} className=" font-medium md:text-sm md:pl-5 pt-10 pb-8 z-[99] tracking-wider bg-cover bg-center custom-img bg-fixed items-center justify-between ">
           <p className='pb-3'>After serving as an Associate Banker at Chase Bank for approximately five years, I made the exciting decision to venture into the technology industry. My unwavering passion for creative problem-solving has been the driving force behind my journey. With a Bachelor's degree in Mathematics and Graphic Design, I gained a valuable combination of skills that laid the foundation for my future pursuits.</p>
           <p className='pb-3'>During my quest for a new challenge, I came across web development and immediately fell in love with it. Through an immersive Software Engineering Bootcamp, I acquired the necessary expertise to become a proficient Full Stack Developer. Since then, my focus has been on crafting captivating and user-friendly applications, always with a commitment to delivering an exceptional user experience. As I actively seek out professional opportunities, my goal is to continuously develop my skills and demonstrate my creativity within the technology domain, aiming to make a meaningful impact in this ever-evolving field.</p>
           <p className='font-style: italic pb-3 '>My hobbies include gaming, watching scary movies, doing nails and spending time with my friends and family.</p>
         </motion.div>
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition:{delay:1}}} className="text-left md:pl-5 md:ml-[0%] ml-[-9%] z-[99] tracking-wider pt-0 md:w-auto w-full bg-cover bg-center custom-img bg-fixed">
           <h5>My skills include:</h5>
-          <div className='flex flex-wrap min-w-full mx-[-8%] md:mx-[0] justify-center pt-[2%] bg-cover bg-center custom-img bg-fixed'>
+          <div className='flex flex-wrap min-w-full mx-[-8%] md:mx-[0] justify-center pt-[2%] bg-cover bg-center custom-img bg-fixed '>
            {skills_array.map((skill)=> {
             return(
               <motion.div whileHover={[{scale:1.35},{rotate:-5}]}   key={skill} className=' px-[15px] py-[10px] md:mx-2 rounded-full bg-white/70 object-cover shadow-xl cursor-pointer'> 
@@ -90,10 +90,10 @@ function About(){
           })} 
           </div>
         </motion.div>
-        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition:{delay:1.4}}} className="md:pl-5 px-5 min-w-screen z-[99] tracking-wider pt-[2%] pb-2  bg-cover bg-center custom-img bg-fixed">
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition:{delay:1.4}}} className="md:pl-5 min-w-full z-[99] tracking-wider pt-[2%] pb-2 bg-cover bg-center custom-img bg-fixed">
           <h5>Learn more about me:</h5>
         {/* </motion.div> */}
-        <div className="flex items-center text-center justify-center px-[40%]  md:px-[30%]  pt-[2%] z-[99]">
+        <div className="flex min-w-full  md:mx-[0] justify-center bg-cover bg-center custom-img bg-fixed  px-[40%] md:px-[30%] pt-[2%] z-[99] ">
           <div className=" text-xl rounded-full shadow-xl text-[#696969] bg-white/70 shadow-gray-600/90 md:p-8 p-5 mx-[12%] hover:bg-slate-600/50 hover:text-[#F9FBFD] hover:scale-[1.35] ease-in-out duration-200 cursor-pointer">
             <Link href="http://linkedin.com/in/tasreenmowreen" legacyBehavior>
               <a target="_blank" rel="noopener noreferrer">
