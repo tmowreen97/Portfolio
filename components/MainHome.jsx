@@ -17,7 +17,7 @@ function MainHome(){
         <div className="flex items-center justify-center w-screen h-screen md:pt-[0%] pt-[25%] bg-cover bg-center custom-img bg-fixed ">
           <div className="md:pl-2 text-left items-center justify-center z-[99] md:max-w-[63%] tracking-wider">
              <h5>Hi, I'm</h5>
-            <motion.h1  ref={ref} className={isInView ? "mr-2 animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-4xl text-white font-bold md:text-7xl md:mb-0 mb-10" : "mr-2  pr-5 text-4xl text-white font-bold md:text-7xl"}>
+            <motion.h1  ref={ref} className={isInView ? "mr-2 pr-5 animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white text-4xl text-white font-bold md:text-7xl md:mb-0 mb-10" : "mr-2 pr-5 overflow-hidden whitespace-nowrap border-r-4 border-r-white text-4xl text-white font-bold md:mb-0 mb-10 md:text-7xl"}>
               Tasreen Mowreen.
             </motion.h1> <br/>
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition:{delay:0.4}}} className="md:pl-5 md:max-w-[80%] max-w-[70%] z-[99] justify-center tracking-wider">
@@ -48,9 +48,9 @@ function MainHome(){
               </motion.div>
             </motion.div> 
             </div>
-          <div className="pt-[5%] flex z-[99] opacity-90 md:pb-[50px] md:pr-[15px] md:pl-[100px] md:h-[60%] md:w-[100%]  h-[20%] w-[30%]  md:ml-[0%] ml-[-20%] pr-[20px]">
+          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition:{delay:0.9}}} className="pt-[5%] flex z-[99] opacity-90 md:pb-[50px] md:pr-[15px] md:pl-[100px] md:h-[60%] md:w-[100%] h-[20%] w-[30%] md:ml-[0%] ml-[-20%] pr-[20px]">
             <Image src={'/assets/me_coding.png'} width='325' height='325' alt='/'/>
-          </div>
+          </motion.div>
           
 
         </div>
