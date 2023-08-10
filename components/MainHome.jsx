@@ -12,7 +12,7 @@ function MainHome(){
 // removed from 15 min-w-screen min-h-screen
 //  might need to add div to line 19
   return(
-    <div className="w-full h-full text-center justify-center pb-[80px]">
+    <div className="w-screen h-full text-center justify-center pb-[80px]">
       <div className="md:max-w-[1240px] w-full h-full md:flex mx-[15%] items-center justify-center text-center  ">
         <div className="flex min-h-screen items-center justify-center w-screen h-screen md:pt-[0%] pt-[25%] bg-cover bg-center custom-img bg-fixed ">
           <div className="md:pl-2 text-left items-center justify-center z-[99] md:max-w-[63%] tracking-wider">
