@@ -12,7 +12,7 @@ function ProjectList({image}){
     <div className="grid grid-cols-1 text-center pt-5 justify-center items-center p-2 mx-[15%]">
     <div className="hover:bg-slate-500/30 bg-[#ECE4CC]/20 shadow-xl md:flex items-center justify-evenly hover:scale-[1.1] rounded-xl p-2 ease-in-out duration-200">
       <div className="pr-5 group ">
-        <motion.div whileHover={[{ scale: 1.25 }, {rotate:-3}]} onHoverStart={()=>setShowGif(true)} onHoverEnd={()=>setShowGif(false)} transition={{delay:.1}} className="z-99 rounded-xl overflow-hidden opacity-100">
+        <motion.div whileHover={[{ scale: 1.25 }, {rotate:-3}]} onMouseEnter={()=>setShowGif(true)} onMouseLeave={()=>setShowGif(false)} transition={{delay:.1}} className="z-99 rounded-xl overflow-hidden opacity-100">
           {showGif ? <Image src={image.gif} width='450' height='450'/> :<Image src={image.url} width='450' height='450'/>}
         </motion.div>
         <div className="flex relative">
