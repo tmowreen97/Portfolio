@@ -18,7 +18,7 @@ function Contact(){
           <h1 className="text-5xl md:text-7xl text-left">Contact Me:</h1>
         </motion.div>
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 , transition:{delay:0.6}}} className="md:flex justify-between">
-          <div className="md:max-w-[40%] md:mx-5 mx-2 text-left tracking-wider text-md mt-[50px] mb-10">
+          <div className="md:max-w-[40%] md:mx-5 mx-2 text-left tracking-wider text-md mt-[50px] pb-10">
             <p>I would love to hear from you!</p>
             <p>Please feel free to contact me through this form with any questions or business inquiries.</p>
           </div>
