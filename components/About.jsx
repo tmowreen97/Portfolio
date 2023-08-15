@@ -121,7 +121,7 @@ function About(){
             
           </div>
           <div className="text-xl rounded-full shadow-xl text-[#696969] bg-white/70 shadow-gray-600/90 md:p-8 mx-[12%] p-5 hover:bg-slate-600/50 hover:text-[#F9FBFD] hover:scale-[1.35] ease-in-out duration-200 cursor-pointer">
-            <Link href="/assets/Tasreen-Mowreen-Resume_PDF.pdf" legacyBehavior>
+            <Link href="/assets/Tasreen Mowreen Resume_PDF.pdf" legacyBehavior>
             <a target='_blank' rel='noopener noreferrer'>
               <BsPersonLinesFill/>
             </a>
