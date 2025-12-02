@@ -21,8 +21,8 @@ function MainHome(){
               Tasreen Mowreen.
             </motion.h1> <br/>
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition:{delay:0.4}}} className="md:pl-5 md:max-w-[80%] max-w-[70%] z-[99] justify-center tracking-wider">
-              <h6>A full-stack engineer.</h6>
-              <h6>I create engaging, efficient and user-friendly applications.</h6>
+              <h6>Versatile Engineer.</h6>
+              <h6>I create engaging, efficient and user-friendly applications with a focus on customer experience.</h6>
               <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition:{delay:0.9}}} className="flex items-center justify-between max-w-[100%] md:mx-[0px] mx-[-10px] pt-[20px]  md:pt-[0px] z-[99] ">
                 <div className="text-xl rounded-full shadow-xl text-[#696969] bg-white/70 shadow-gray-600/90 md:p-8 p-5 mx-5 mt-10 hover:bg-slate-600/50 hover:text-[#F9FBFD] hover:scale-[1.35] ease-in-out duration-200 cursor-pointer">
                   <Link href="https://www.linkedin.com/in/tasreenmowreen" legacyBehavior>
